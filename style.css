@@ -1,0 +1,148 @@
+:root {
+    --primary-green: #596D48;
+    --border-light: #E5E7EB;
+    --error-red: #b91c1c;
+    --focus-blue: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Section */
+.left-section {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-overlay img {
+    height: 100px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* Right Side Content */
+.right-section {
+    flex: 1.5;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text {
+    padding: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Specific Instructions for Interactivity */
+input:focus {
+    border: 2px solid var(--focus-blue);
+    box-shadow: 2px 2px 5px rgba(37, 99, 235, 0.2);
+}
+
+input:invalid {
+    border-color: var(--error-red);
+}
+
+/* Button Section */
+.button-section {
+    padding: 40px 50px;
+}
+
+button {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+.button-section p {
+    margin-top: 20px;
+}
+
+.button-section a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+}
